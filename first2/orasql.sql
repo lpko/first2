@@ -30,6 +30,9 @@ NOMAXVALUE
 NOCACHE;
 
 
+
+
+
 시퀀스 조회
 select * from user_sequences
 where sequence_name = 'SEQ_TB_BOARD_IDX'
@@ -41,6 +44,7 @@ alter sequence SEQ_TB_BOARD_IDX increment by -2 minvalue 0;
 select SEQ_TB_BOARD_IDX.nextval from dual;
 alter sequence SEQ_TB_BOARD_IDX increment by 1 minvalue 0;
 
+select * from TB_BOARD
 
 게시판 조회
 
